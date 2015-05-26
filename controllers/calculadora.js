@@ -28,7 +28,7 @@ module.exports = function() {
 				},
 				
 				subtrair: function(numero1, numero2) {
-					return numero1 - numero2;
+					return 0;//numero1 - numero2;
 				},
 				
 				multiplicar: function(numero1, numero2) {

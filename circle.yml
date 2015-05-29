@@ -4,4 +4,8 @@ machine:
 dependencies:
   pre:
     - npm install -g grunt coffee-script
-
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: murmuring-anchorage-7264

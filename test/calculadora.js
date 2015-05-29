@@ -52,7 +52,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(5);
+				resultado.should.be.equal(2);
 			});
 		});
 		

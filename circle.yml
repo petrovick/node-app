@@ -8,4 +8,4 @@ deployment:
   staging:
     branch: master
     heroku:
-      appname: murmuring-anchorage-7264
+      appname: stark-thicket-4239

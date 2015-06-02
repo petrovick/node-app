@@ -2,7 +2,7 @@ machine:
   node:
     version: 0.10.22
 dependencies:
-  pre
+  pre 
     - npm install -g grunt coffee-script
 deployment:
   staging:

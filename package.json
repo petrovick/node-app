@@ -27,11 +27,7 @@
     "express-load": "^1.1.14"
   },
   "devDependencies": {
-    "chai": "^2.3.0",
     "coveralls": "^2.11.2",
-    "grunt": "^0.4.5",
-    "grunt-mocha-test": "^0.12.7",
-    "grunt-shell": "^1.1.2",
     "mocha": "^2.2.5",
     "should": "^6.0.3"
   }

@@ -10,8 +10,6 @@ deploy:
     repo: petrovick/node-app
 before_script:
   - npm install -g npm@>=2.1
-  - npm install -g grunt-cli@0.1.x
-  - npm install --quiet
   - npm install -g mocha
   - npm install -g istanbul
 script:

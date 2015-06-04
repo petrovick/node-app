@@ -75,10 +75,10 @@ module.exports = function (grunt) {
         }
     });
 
-    //grunt.registerTask('beautify', ['jsbeautifier:beautify']);
+    grunt.registerTask('beautify', ['jsbeautifier:beautify']);
     grunt.registerTask('mocha', ['mochaTest']);
     grunt.registerTask('coverage', ['shell:run_istanbul']);
-    //grunt.registerTask('default', [/*'beautify', */'jshint', 'mocha']);
+    grunt.registerTask('default', ['beautify', 'jshint', 'mocha']);
 
     // Print a timestamp (useful for when watching)
     grunt.registerTask('timestamp', function () {

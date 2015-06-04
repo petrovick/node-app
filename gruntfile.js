@@ -4,7 +4,7 @@
 
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jsbeautifier');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+    //grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-shell');
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        jshint: {
+        /*jshint: {
             files: '<%= alljsfiles%>',
             options: {
                 browser: true,
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
                     'done': true
                 }
             }
-        },
+        },*/
         watch: {
             all: {
                 files: '<%= alljsfiles%>',
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
     //grunt.registerTask('beautify', ['jsbeautifier:beautify']);
     grunt.registerTask('mocha', ['mochaTest']);
     grunt.registerTask('coverage', ['shell:run_istanbul']);
-    grunt.registerTask('default', [/*'beautify',*/ 'jshint', 'mocha']);
+    grunt.registerTask('default', [/*'beautify', 'jshint',*/ 'mocha']);
 
     // Print a timestamp (useful for when watching)
     grunt.registerTask('timestamp', function () {

@@ -8,10 +8,11 @@ deploy:
   app: codeshipheroku
   on:
     repo: petrovick/node-app
-before_script:
-  - npm install -g npm@>=2.1
-  - npm install -g mocha
-  - npm install -g istanbul
-script:
-  - grunt
-  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec --recursive  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+#before_script:
+#  - npm install -g npm@>=2.1
+#  - npm install -g mocha
+#  - npm install -g istanbul
+#script:
+#  - grunt
+#  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec --recursive  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+script: make test-coveralls

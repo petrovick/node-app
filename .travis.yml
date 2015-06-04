@@ -1,8 +1,7 @@
 language: node_js
 node_js:
   - "0.12"
-script:
-  - npm install coveralls --save-dev
+script: npm run-script test-on-travis
 after_success:
   - npm run coveralls
   

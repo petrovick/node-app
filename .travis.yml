@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - "0.12"
+install:
+  - npm install coveralls
+script:
+  - coverage run --source=test calculadora.js test test
+after_sucess: coveralls
 deploy:
   provider: heroku
   api_key: 
